@@ -1,27 +1,10 @@
 @each $month, $amount in $months {
   @for $i from 1 through $amount {
     .#{$month} div:nth-child(#{$i}) {
-      width: 100px;
-      height: 100px;
-      background-color: #eee;
-      border: 1px solid #000;
-      margin-left: 1px;
-      position: relative;
-      cursor: pointer;
-      animation: 0.5s ease liftDown;
+      display: block;
 
       &::before {
         content: "#{$i}";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      &:hover {
-        background: pink;
-        animation: 0.5s ease liftUp;
-        top: -20px;
       }
     }
   }

@@ -1,0 +1,39 @@
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: ($box-width + $box-gap) * 7;
+
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  & div:nth-child(n) {
+    position: relative;
+
+    display: none;
+    width: $box-width;
+    height: $box-height;
+    margin-left: $box-gap;
+    margin-bottom: $box-gap;
+
+    background-color: #eee;
+    border: 1px solid #000;
+
+    cursor: pointer;
+    transition: 0.5s ease;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      background: pink;
+      
+      transform: translateY(-20px);
+    }
+  }
+}

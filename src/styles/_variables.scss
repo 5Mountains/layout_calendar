@@ -1,11 +1,15 @@
+$box-width: 100px;
+$box-height: 100px;
+$box-gap: 1px;
+
 $days: (
   calendar-mon: 0,
-  calendar-tue: 102px,
-  calendar-wed: 203px,
-  calendar-thu: 304px,
-  calendar-fri: 405px,
-  calendar-sat: 506px,
-  calendar-sun: 607px,
+  calendar-tue: $box-width + $box-gap * 2,
+  calendar-wed: $box-width * 2 + $box-gap * 3,
+  calendar-thu: $box-width * 3 + $box-gap * 4,
+  calendar-fri: $box-width * 4 + $box-gap * 5,
+  calendar-sat: $box-width * 5 + $box-gap * 6,
+  calendar-sun: $box-width * 6 + $box-gap * 7,
 );
 
 $months: (
