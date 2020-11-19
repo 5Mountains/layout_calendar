@@ -1,0 +1,21 @@
+@keyframes liftUp {
+  0% {
+    top: 0;
+    background: #eee;
+  }
+  100% {
+    top: -20px;
+    background: pink;
+  }
+}
+
+@keyframes liftDown {
+  0% {
+    top: -20px;
+    background: pink;
+  }
+  100% {
+    top: 0;
+    background: #eee;
+  }
+}
